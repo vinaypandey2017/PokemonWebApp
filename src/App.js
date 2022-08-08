@@ -7,7 +7,6 @@ const App = () => {
   const [loadMore, setLoadMore] = useState(
     "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
   );
-
   const getAllPokemons = async () => {
     const res = await fetch(loadMore);
     const data = await res.json();
